@@ -8,7 +8,7 @@ def my_all?(collection)
     stored << yield(collection[i])
     i += 1
   end
-  stored
+  if stored.include?
 end
 
 my_all?([1,2,3]) {|i| i < 2}
